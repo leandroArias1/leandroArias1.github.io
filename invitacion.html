@@ -2,30 +2,41 @@
 <html lang="en">
 <head>
     <title>Entrada</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 </head>
 <body>
     <h1>Invitación a Escuela Abierta</h1>
+    <div>
+        <h1>
+            Hola
+        </h1>
+    </div>
+    
+    <div class="chanchita">
+
+    <h2>Presentar en la puerta de la escuela. <br><span>Solo pueden ir 2 familiares por alumno de la escuela.</span></h2>
+    
     <p id="datos"></p>
     <div id="qrcode"></div>
     <script>
-        // Obtener los parámetros de la URL
+
         const urlParams = new URLSearchParams(window.location.search);
         const nombre = urlParams.get('nombre');
         const apellido = urlParams.get('apellido');
         const grado = urlParams.get('grado');
         const division = urlParams.get('division');
 
-        // Mostrar los datos
-        document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
-
-        // Generar la URL que redirigirá a la página de resultados
+        // document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
+        
         const resultadosURL = `resultados.html?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&grado=${encodeURIComponent(grado)}&division=${encodeURIComponent(division)}`;
-
-        // Generar el código QR con la URL de resultados
+        
         new QRCode(document.getElementById("qrcode"), resultadosURL);
+        
     </script>
+    </div>
+    
 </body>
 </html>
