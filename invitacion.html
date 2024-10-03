@@ -9,5 +9,24 @@
 <body>
     <h1>Invitación a Escuela Abierta</h1>
     <img src="superQR.PNG" alt="">
+    <p id="datos"></p>
+    <div id="qrcode"></div>
+    <script>
+        // Obtener los parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const nombre = urlParams.get('nombre');
+        const apellido = urlParams.get('apellido');
+        const grado = urlParams.get('grado');
+        const division = urlParams.get('division');
+
+        // Mostrar los datos
+        document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
+
+        // Generar la URL que redirigirá a la página de resultados
+        const resultadosURL = `resultados.html?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&grado=${encodeURIComponent(grado)}&division=${encodeURIComponent(division)}`;
+
+        // Generar el código QR con la URL de resultados
+        new QRCode(document.getElementById("qrcode"), resultadosURL);
+    </script>
 </body>
 </html>
