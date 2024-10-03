@@ -8,27 +8,6 @@
 </head>
 <body>
     <h1>Invitación a Escuela Abierta</h1>
-    <p id="datos"></p>
-    <div id="qrcode"></div>
-    <ul>
-        <li><a href="resultados.html">escuela</a></li>
-    </ul>
-    <script>
-        // Obtener los parámetros de la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const nombre = urlParams.get('nombre');
-        const apellido = urlParams.get('apellido');
-        const grado = urlParams.get('grado');
-        const division = urlParams.get('division');
-
-        // Mostrar los datos
-        document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
-
-        // Generar la URL para resultados
-        const resultadosUrl = `resultados.html?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&grado=${encodeURIComponent(grado)}&division=${encodeURIComponent(division)}`;
-
-        // Generar el código QR
-        new QRCode(document.getElementById("qrcode"), resultadosUrl);
-    </script>
+    <img src="qr-code.png" alt="">
 </body>
 </html>
