@@ -7621,7 +7621,7 @@
         "id": "",
         "nombre": "Pablo",
         "apellido": "Sandandez",
-        "curso": "1812381247861812461380129840172381273872194629817874819047123916231401298742375823740237598236482370487235928374982903589023759236936048623856248702395872634823423098907289375490328490238590273489073582367162879568767324° Año",
+        "curso": "1° Año",
         "division": "B"
     },
     {
@@ -8563,6 +8563,18 @@
     {   "id": "128",
         "nombre": "prueba6",
         "apellido": "prueba6",
+        "curso": "4° año de Secundaria ",
+        "division": "D"
+    },
+    {   "id": "128",
+        "nombre": "prueba7",
+        "apellido": "prueba7",
+        "curso": "4° año de Secundaria ",
+        "division": "B"
+    },
+    {   "id": "128",
+        "nombre": "prueba8",
+        "apellido": "prueba8",
         "curso": "4° año de Secundaria ",
         "division": "D"
     },
