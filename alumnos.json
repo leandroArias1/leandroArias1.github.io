@@ -8523,61 +8523,14 @@
         "curso": "4° año de Secundaria ",
         "division": "D"
     },
-    {
+     {
         "id": "127",
         "nombre": "Pilar",
         "apellido": "Zarate",
         "curso": "4° año de Secundaria ",
         "division": "D"
     },
-    {   "id": "128",
-        "nombre": "prueba",
-        "apellido": "prueba",
-        "curso": "4° año de Secundaria ",
-        "division": "A"
-    },
-    {   "id": "128",
-        "nombre": "prueba2",
-        "apellido": "prueba2",
-        "curso": "4° año de Secundaria ",
-        "division": "B"
-    },
-    {   "id": "128",
-        "nombre": "prueba3",
-        "apellido": "prueba3",
-        "curso": "4° año de Secundaria ",
-        "division": "B"
-    },
-    {   "id": "128",
-        "nombre": "prueba4",
-        "apellido": "prueba4",
-        "curso": "4° año de Secundaria ",
-        "division": "D"
-    },
-    {   "id": "128",
-        "nombre": "prueba5",
-        "apellido": "prueba5",
-        "curso": "4° año de Secundaria ",
-        "division": "D"
-    },
-    {   "id": "128",
-        "nombre": "prueba6",
-        "apellido": "prueba6",
-        "curso": "4° año de Secundaria ",
-        "division": "D"
-    },
-    {   "id": "128",
-        "nombre": "prueba7",
-        "apellido": "prueba7",
-        "curso": "4° año de Secundaria ",
-        "division": "B"
-    },
-    {   "id": "128",
-        "nombre": "prueba8",
-        "apellido": "prueba8",
-        "curso": "4° año de Secundaria ",
-        "division": "D"
-    },
+
 
 
 
@@ -8787,5 +8740,43 @@
         "apellido": "ZarateZarate",
         "curso": "5° año",
         "division": "D"
-    }  
+    }, 
+
+
+
+
+
+
+    
+    
+    {   "id": "128",
+        "nombre": "prueba6",
+        "apellido": "prueba6",
+        "curso": "4° año de Secundaria ",
+        "division": "D"
+    },
+    {   "id": "128",
+        "nombre": "prueba7",
+        "apellido": "prueba7",
+        "curso": "4° año de Secundaria ",
+        "division": "B"
+    },
+    {   "id": "128",
+        "nombre": "prueba8",
+        "apellido": "prueba8",
+        "curso": "4° año de Secundaria ",
+        "division": "D"
+    },
+    {   "id": "128",
+        "nombre": "prueba9",
+        "apellido": "prueba9",
+        "curso": "4° año de Secundaria ",
+        "division": "D"
+    },
+    {   "id": "128",
+        "nombre": "prueba10",
+        "apellido": "prueba10",
+        "curso": "4° año de Secundaria ",
+        "division": "D"
+    }
 ]
