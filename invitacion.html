@@ -18,7 +18,7 @@
             const grado = urlParams.get('grado');
             const division = urlParams.get('division');
 
-            document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
+            document.getElementById('datos').innerHTML = `Nombre: ${nombre} ${apellido}<br><br>Grado: ${grado}División: ${division}`;
 
             const resultadosUrl = `resultados.html?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&grado=${encodeURIComponent(grado)}&division=${encodeURIComponent(division)}`;
             new QRCode(document.getElementById("qrcode"), resultadosUrl);
