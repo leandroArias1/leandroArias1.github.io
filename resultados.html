@@ -7,21 +7,13 @@
     <h1>Resultados del Login</h1>
     <p id="datos"></p>
     <script>
-        // Obtener los parámetros de la URL
         const urlParams = new URLSearchParams(window.location.search);
         const nombre = urlParams.get('nombre');
         const apellido = urlParams.get('apellido');
         const grado = urlParams.get('grado');
         const division = urlParams.get('division');
 
-        // Mostrar los datos
         document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
-
-        // Generar la URL para resultados
-        const resultadosUrl = `resultados.html?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&grado=${encodeURIComponent(grado)}&division=${encodeURIComponent(division)}`;
-
-        // Generar el código QR
-        new QRCode(document.getElementById("qrcode"), resultadosUrl);
     </script>
 </body>
 </html>

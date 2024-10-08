@@ -2,41 +2,27 @@
 <html lang="en">
 <head>
     <title>Entrada</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <link rel="stylesheet" href="invitacion.css">
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 </head>
 <body>
     <h1>Invitación a Escuela Abierta</h1>
-    <div>
-        <h1>
-            Hola
-        </h1>
+    <div class="container">
+        <h2>Presentar en la puerta de la escuela. <br><span>Válido hasta 2 familiares por alumno.</span></h2>
+        <p id="datos"></p>
+        <div id="qrcode"></div>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const nombre = urlParams.get('nombre');
+            const apellido = urlParams.get('apellido');
+            const grado = urlParams.get('grado');
+            const division = urlParams.get('division');
+
+            document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
+
+            const resultadosUrl = `resultados.html?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&grado=${encodeURIComponent(grado)}&division=${encodeURIComponent(division)}`;
+            new QRCode(document.getElementById("qrcode"), resultadosUrl);
+        </script>
     </div>
-    
-    <div class="chanchita">
-
-    <h2>Presentar en la puerta de la escuela. <br><span>Solo pueden ir 2 familiares por alumno de la escuela.</span></h2>
-    
-    <p id="datos"></p>
-    <div id="qrcode"></div>
-    <script>
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const nombre = urlParams.get('nombre');
-        const apellido = urlParams.get('apellido');
-        const grado = urlParams.get('grado');
-        const division = urlParams.get('division');
-
-        // document.getElementById('datos').innerText = `Nombre: ${nombre} ${apellido}, Grado: ${grado}, División: ${division}`;
-        
-        const resultadosURL = `resultados.html?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&grado=${encodeURIComponent(grado)}&division=${encodeURIComponent(division)}`;
-        
-        new QRCode(document.getElementById("qrcode"), resultadosURL);
-        
-    </script>
-    </div>
-    
 </body>
 </html>

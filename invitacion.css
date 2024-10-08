@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e8f0fe;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #1a73e8;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 3em 2em;
+    max-width: 450px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 0 auto; /* Cambiado a auto para centrar en pantalla grande */
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #4285f4;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+h2 span {
+    display: block;
+    font-style: italic;
+    font-size: 0.9em;
+    color: rgb(255, 0, 0);
+    margin-top: 0.5em;
+}
+
+p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 2em;
+    font-weight: 400;
+}
+
+#qrcode {
+    margin-top: 2em;
+    margin: 0 auto; /* Centrar el QR */
+    display: flex; /* Para usar justify-content */
+    justify-content: center; /* Centrar contenido en el contenedor */
+    align-items: center; /* Alinear verticalmente, si es necesario */
+    max-width: 100%; /* Asegurar que no exceda el contenedor */
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5em;
+}
+
+button:hover {
+    background-color: #1558b1;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 500px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2em;
+    }
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 500px; /* Aumentar el ancho máximo en pantallas grandes */
+        padding: 4em;
+        margin-inline: auto; /* Ajuste de márgenes */
+    }
+
+    h1 {
+        font-size: 3.5em; /* Aumentar tamaño de h1 */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Aumentar tamaño de h2 */
+    }
+
+    p {
+        font-size: 1.2em; /* Aumentar tamaño de p */
+    }
+}
