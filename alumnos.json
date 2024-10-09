@@ -10894,7 +10894,7 @@
     },
 
 
- 
+
 
 
 
@@ -11279,9 +11279,17 @@
 
     
     
+    
+    
     {   "id": "128",
-        "nombre": "prueba6",
-        "apellido": "prueba6",
+        "nombre": "Leandro",
+        "apellido": "Rossa",
+        "curso": "4° Año",
+        "division": "A"
+    },
+    {   "id": "128",
+        "nombre": "Santino",
+        "apellido": "Arias",
         "curso": "4° Año",
         "division": "D"
     },
