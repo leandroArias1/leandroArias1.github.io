@@ -18,11 +18,14 @@
             <input type="text" id="apellido" required>
 
             <label for="curso">Curso:</label>
-            <select id="curso" required></select>
+            <select id="curso" required>
+                <option value="" disabled selected>Seleccione un curso</option>
+            </select>
 
             <label for="division">División:</label>
-            <select id="division" required></select>
-
+            <select id="division" required>
+                <option value="" disabled selected>Seleccione una división</option>
+            </select>
             <br>
             <h2>Datos del invitado</h2>
 
@@ -32,8 +35,23 @@
             <label for="apellido">Apellido:</label>
             <input type="text" required>
 
-            <!-- <label for="division">Parentesco:</label>
-            <select id="division" required></select> -->
+            <label for="mail">Mail:</label>
+            <input type="text" required>
+
+            <label for="parentesco">Parentesco:</label>
+            <select id="parentesco" required>
+                <option value="" disabled selected>Seleccione un parentesco</option>
+                <option value="padre">Padre</option>
+                <option value="madre">Madre</option>
+                <option value="hermano">Hermano</option>
+                <option value="hermana">Hermana</option>
+                <option value="abuelo">Abuelo</option>
+                <option value="abuela">Abuela</option>
+                <option value="tio">Tío</option>
+                <option value="tia">Tía</option>
+                <option value="primo">Primo</option>
+                <option value="prima">Prima</option>
+            </select>
 
             <button type="submit">Obtener Entrada</button>
             <p id="error-message" style="color: red;"></p>
