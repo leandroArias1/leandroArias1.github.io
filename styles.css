@@ -28,6 +28,7 @@ label {
 
 span {
     color: rgb(255, 0, 0);
+    font-size: 20px;
 }
 
 input, select {
@@ -59,7 +60,7 @@ button:hover {
     text-align: center;
 }
 
-.chanchita {
+.login-container {
     text-align: center;
     margin-top: 40px;
 }
