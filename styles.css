@@ -26,6 +26,10 @@ label {
     color: #555;
 }
 
+span {
+    color: rgb(255, 0, 0);
+}
+
 input, select {
     width: 100%;
     padding: 10px;
